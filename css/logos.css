@@ -1,0 +1,83 @@
+.schools-logos {
+  padding: 0 0 80px;
+}
+
+.schools-logos__header {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  margin-bottom: 42px;
+}
+
+.schools-logos .section-title {
+  margin-bottom: 0;
+}
+
+.schools-logos__marquee {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.schools-logos__marquee:last-child {
+  margin-bottom: 0;
+}
+
+.schools-logos__track {
+  display: flex;
+  width: max-content;
+}
+
+.schools-logos__marquee--ltr .schools-logos__track {
+  animation: marquee-ltr var(--marquee-speed) linear infinite;
+}
+
+.schools-logos__marquee--rtl .schools-logos__track {
+  animation: marquee-rtl var(--marquee-speed) linear infinite;
+}
+
+.schools-logos__marquee:hover .schools-logos__track,
+.schools-logos__marquee:focus .schools-logos__track,
+.schools-logos__marquee:focus-within .schools-logos__track {
+  animation-play-state: paused;
+}
+
+.schools-logos__list {
+  display: flex;
+  gap: 0;
+  padding-inline: 0;
+}
+
+.schools-logos__item {
+  flex-shrink: 0;
+}
+
+.schools-logos__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--logo-card-w);
+  height: var(--logo-card-h);
+  padding: 10px 16px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.schools-logos__card img {
+  max-width: 100%;
+  max-height: 86px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes marquee-ltr {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}

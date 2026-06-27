@@ -1,0 +1,13 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect width="80" height="80" rx="12" fill="url(#cardGrad)"/>
+  <path d="M40 24V48M28 36H52" stroke="url(#purpleGrad)" stroke-width="3" stroke-linecap="round"/>
+  <rect x="26" y="50" width="28" height="6" rx="2" fill="url(#purpleGrad)"/>
+  <defs>
+    <linearGradient id="cardGrad" x1="80" y1="0" x2="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDBFFF"/><stop offset="1" stop-color="#EDDDFF"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="80" y1="0" x2="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000E38"/><stop offset="1" stop-color="#3F186A"/>
+    </linearGradient>
+  </defs>
+</svg>

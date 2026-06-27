@@ -1,0 +1,139 @@
+.footer {
+  background: var(--gradient-purple-vertical);
+}
+
+.footer__main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding: 58px var(--container-padding);
+  box-sizing: border-box;
+}
+
+.footer__logo {
+  width: 141.71px;
+  height: 124px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.footer__info {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-end;
+  max-width: 1286px;
+}
+
+.footer__office,
+.footer__contact,
+.footer__social {
+  position: relative;
+  max-width: 418px;
+  padding-left: 66px;
+  min-height: 90px;
+}
+
+.footer__office-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-footer-title);
+  font-weight: 600;
+  line-height: var(--lh-hero);
+  color: var(--color-white);
+  margin-bottom: 4px;
+}
+
+.footer__office-text {
+  font-family: var(--font-body);
+  font-size: var(--fs-footer-body);
+  font-weight: 400;
+  line-height: var(--lh-hero);
+  color: var(--color-white);
+}
+
+.footer__office-text a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer__office-text a:hover,
+.footer__office-text a:focus-visible {
+  text-decoration: underline;
+}
+
+.footer__icon-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--gradient-card);
+  border: 2px solid var(--color-card-border);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.footer__icon-box img,
+.footer__icon-box svg {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--gradient-card);
+  border: 2px solid var(--color-card-border);
+  border-radius: 10px;
+  transition: transform var(--transition-base);
+  box-sizing: border-box;
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus-visible {
+  transform: translateY(-2px);
+}
+
+.footer__social-link img,
+.footer__social-link svg {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__bottom {
+  background: var(--color-white);
+  padding: 18px var(--container-padding);
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__copyright {
+  font-family: var(--font-heading);
+  font-size: var(--fs-copyright);
+  font-weight: 400;
+  line-height: var(--lh-hero);
+  background: var(--gradient-text-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

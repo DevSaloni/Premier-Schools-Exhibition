@@ -1,0 +1,189 @@
+.choose-school {
+  padding: 0 0 80px;
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.choose-school .section-title {
+  margin-bottom: 24px;
+  padding-inline: var(--container-padding);
+}
+
+.choose-school__slider {
+  position: relative;
+}
+
+.choose-school__viewport {
+  overflow: hidden;
+  touch-action: pan-x;
+}
+
+.choose-school__track {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0 12px 99px;
+  transition: transform 0.4s ease;
+}
+
+.choose-school__card {
+  flex: 0 0 var(--school-card-w);
+  width: var(--school-card-w);
+  height: var(--school-card-h);
+  border-radius: var(--school-card-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.choose-school__card-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--school-card-radius);
+}
+
+.choose-school__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.choose-school__card-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-fade-up);
+}
+
+.choose-school__card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  color: var(--color-white);
+}
+
+.choose-school__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-card-title);
+  font-weight: 600;
+  line-height: var(--lh-hero);
+  margin-bottom: 12px;
+}
+
+.choose-school__card-desc {
+  font-family: var(--font-body);
+  font-size: var(--fs-card-desc);
+  font-weight: 400;
+  line-height: var(--lh-hero);
+}
+
+.choose-school__pagination {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.choose-school__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  transition: background var(--transition-base), transform var(--transition-base);
+}
+
+.choose-school__dot--active,
+.choose-school__dot[aria-selected="true"] {
+  background: var(--color-purple-dark);
+  transform: scale(1.2);
+}
+
+.schedule {
+  position: relative;
+  overflow: hidden;
+  min-height: 725px;
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.schedule__bg {
+  position: absolute;
+  inset: 0;
+  width: 71%;
+  background: var(--gradient-schedule);
+  z-index: 0;
+}
+
+.schedule__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 641px 1fr;
+  align-items: center;
+  min-height: 725px;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  box-sizing: border-box;
+}
+
+.schedule__content {
+  max-width: 641px;
+  padding-top: 173px;
+}
+
+.schedule__tagline,
+.schedule__subtitle {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: var(--fs-schedule-tag);
+  font-weight: 400;
+  line-height: var(--lh-hero);
+  background: var(--gradient-purple-icon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-schedule-title);
+  font-weight: 600;
+  line-height: var(--lh-schedule);
+  background: var(--gradient-text-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 8px 0;
+}
+
+.schedule__subtitle {
+  margin-top: 8px;
+}
+
+.schedule__content .btn {
+  margin-top: 26px;
+}
+
+.schedule__image {
+  position: relative;
+  min-height: 725px;
+  margin-right: calc(-1 * var(--container-padding));
+}
+
+.schedule__image img {
+  width: 100%;
+  height: 100%;
+  min-height: 725px;
+  object-fit: cover;
+}
+
+.schedule__image-fade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 254px;
+  height: 100%;
+  background: var(--gradient-schedule-fade);
+  pointer-events: none;
+}

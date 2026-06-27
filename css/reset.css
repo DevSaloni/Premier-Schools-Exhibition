@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background: var(--color-white);
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: 10000;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  transition: top var(--transition-base);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+.live-region {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-section);
+  font-weight: 700;
+  text-align: center;
+  line-height: var(--lh-tight);
+  background: var(--gradient-text-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title--large {
+  font-family: var(--font-heading);
+  font-size: var(--fs-choose-title);
+  font-weight: 600;
+  line-height: var(--lh-hero);
+  background: var(--gradient-text-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title--white {
+  font-size: var(--fs-exhibition-title);
+  background: none;
+  -webkit-text-fill-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  min-height: 60px;
+  background: var(--gradient-purple-horizontal-reverse);
+}
+
+.btn__icon img,
+.btn__icon svg {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.btn__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  min-height: 60px;
+  font-family: var(--font-body);
+  font-size: var(--fs-btn);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid var(--color-dark);
+  border-left: none;
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  color: var(--color-navy);
+  background: transparent;
+}
+
+.btn--submit .btn__icon--submit {
+  background: var(--color-white);
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+}
+
+.btn--submit .btn__icon--submit img,
+.btn--submit .btn__icon--submit svg {
+  filter: none;
+}
+
+.btn--register .btn__icon {
+  background: var(--gradient-purple-horizontal-reverse);
+}
+
+.btn--register .btn__text {
+  background: transparent;
+  border-color: var(--color-dark);
+  color: var(--color-navy);
+}
+
+.btn--submit .btn__text {
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-left: none;
+  background: transparent;
+  min-width: 150px;
+}
+
+.btn--schedule .btn__icon--schedule {
+  background: var(--gradient-text-purple);
+}
+
+.btn--schedule .btn__icon--schedule img,
+.btn--schedule .btn__icon--schedule svg {
+  filter: brightness(0) invert(1);
+}
+
+.btn--schedule .btn__text {
+  color: var(--color-navy-border);
+  border: 2px solid var(--color-navy-border);
+  border-left: none;
+  background: transparent;
+}

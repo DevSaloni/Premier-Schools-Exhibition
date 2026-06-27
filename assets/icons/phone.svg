@@ -1,0 +1,8 @@
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M8 4H12L14 18H22L18 25H6L8 4Z" stroke="url(#purpleGrad)" stroke-width="2" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="purpleGrad" x1="29" y1="0" x2="0" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000E38"/><stop offset="1" stop-color="#3F186A"/>
+    </linearGradient>
+  </defs>
+</svg>
