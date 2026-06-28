@@ -4,47 +4,120 @@
 @media (max-width: 1440px) {
   :root {
     --container-padding: 60px;
-    --hero-slider-left: 560px;
-    --hero-blur-left: 900px;
-    --hero-text-w: 440px;
-    --hero-slider-w: 680px;
-    --hero-form-w: 380px;
-    --header-logo-left: 60px;
-    --header-cta-right: 80px;
-    --fs-hero-line: 42px;
+    --fs-hero-line: 36px;
     --fs-hero-highlight: 42px;
-    --fs-hero-sub: 26px;
+    --fs-hero-sub: 24px;
     --fs-schedule-title: 52px;
     --fs-choose-title: 40px;
     --exhibition-card-w: 360px;
   }
 
-  .hero__column--2 {
-    transform: translateY(-32px);
+  .header__inner {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 380px 1fr 380px;
+    padding: 0 60px;
+  }
+
+  .hero__photos-grid {
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(2, 210px);
+    gap: 14px;
+  }
+
+  .hero__photo-cell {
+    width: 140px;
+    height: 210px;
+    border-radius: 90px;
   }
 }
 
-/* 1024px */
+/* 1200px */
+@media (max-width: 1200px) {
+  .hero__inner {
+    grid-template-columns: 340px 1fr 350px;
+    padding: 0 40px;
+  }
+
+  .hero__text {
+    padding-top: 120px;
+  }
+
+  .hero__title-line {
+    font-size: 30px;
+  }
+
+  .hero__title-highlight {
+    font-size: 36px;
+  }
+
+  .hero__title-sub {
+    font-size: 18px;
+  }
+
+  .hero__photos-grid {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(2, 180px);
+    gap: 12px;
+  }
+
+  .hero__photo-cell {
+    width: 120px;
+    height: 180px;
+    border-radius: 80px;
+  }
+
+  .hero__form-panel {
+    margin-top: 80px;
+    max-width: 350px;
+  }
+
+  .hero__event-info {
+    max-width: 340px;
+    padding: 16px 20px;
+    min-height: 80px;
+  }
+
+  .hero__event-primary {
+    font-size: 16px;
+  }
+
+  .hero__event-secondary {
+    font-size: 14px;
+  }
+}
+
+/* 1024px – switch to stacked layout */
 @media (max-width: 1024px) {
   :root {
     --container-padding: 40px;
-    --header-height: 90px;
-    --hero-text-w: 100%;
-    --hero-slider-w: 100%;
-    --hero-form-w: 100%;
+    --header-height: 70px;
     --fs-schedule-title: 44px;
     --fs-choose-title: 36px;
     --exhibition-card-w: 320px;
   }
 
-  .header__logo,
-  .header__logo-img {
-    width: 160px;
-    height: auto;
+  .header {
+    height: 70px;
   }
 
-  .header__cta {
-    margin-top: 12px;
+  .header__inner {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 70px;
+  }
+
+  .header__logo {
+    width: 140px;
+    height: 110px;
+  }
+
+  .header__logo-img {
+    width: 140px;
+    height: 110px;
   }
 
   .hero__inner {
@@ -59,16 +132,23 @@
     position: static;
     width: 100%;
     max-width: 100%;
+    padding-top: 0;
     order: 1;
   }
 
-  .hero__slider {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 100%;
-    height: 420px;
+  .hero__photos-grid {
     order: 2;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hero__photo-cell {
+    width: 140px;
+    height: 200px;
+    border-radius: 90px;
   }
 
   .hero__form-panel {
@@ -77,6 +157,7 @@
     top: auto;
     width: 100%;
     max-width: 100%;
+    margin-top: 0;
     order: 3;
   }
 
@@ -85,20 +166,21 @@
     margin-left: -160px;
   }
 
-  .choose-school__track {
-    padding-left: var(--container-padding);
-  }
-
   .hero__title {
     width: 100%;
   }
 
   .hero__event-info {
     width: 100%;
+    max-width: 500px;
   }
 
   .hero__form {
     max-width: 100%;
+  }
+
+  .choose-school__track {
+    padding-left: var(--container-padding);
   }
 
   .choose-school__card {
@@ -136,6 +218,15 @@
     min-height: 320px;
   }
 
+  .schedule__image-fade {
+    width: 100%;
+    height: 120px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, #ead7ff 0%, rgba(234, 215, 255, 0) 100%);
+  }
+
   .footer__info {
     justify-content: flex-start;
   }
@@ -145,7 +236,7 @@
 @media (max-width: 768px) {
   :root {
     --container-padding: 24px;
-    --header-height: 80px;
+    --header-height: 65px;
     --fs-hero-line: 32px;
     --fs-hero-highlight: 32px;
     --fs-hero-sub: 22px;
@@ -157,34 +248,42 @@
     --exhibition-card-w: 280px;
   }
 
-  .hero__slider {
-    height: 360px;
+  .header {
+    height: 65px;
+  }
+
+  .header__inner {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 65px;
+  }
+
+  .header__logo {
+    width: 120px;
+    height: 94px;
+  }
+
+  .header__logo-img {
+    width: 120px;
+    height: 94px;
+  }
+
+  .hero__photos-grid {
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(2, 160px);
+    gap: 12px;
+  }
+
+  .hero__photo-cell {
+    width: 110px;
+    height: 160px;
+    border-radius: 70px;
   }
 
   .hero__blur {
     width: 320px;
     height: 320px;
     left: 50%;
-  }
-
-  .hero__columns {
-    gap: 16px;
-  }
-
-  .hero__column,
-  .hero__photo {
-    width: 120px;
-    flex: 0 0 120px;
-    height: 280px;
-  }
-
-  .hero__column--2 {
-    transform: translateY(-16px);
-  }
-
-  .stats__item {
-    width: calc(50% - 18px);
-    min-width: 240px;
   }
 
   .choose-school__card {
@@ -204,6 +303,7 @@
 @media (max-width: 480px) {
   :root {
     --container-padding: 16px;
+    --header-height: 60px;
     --fs-hero-line: 28px;
     --fs-hero-highlight: 28px;
     --fs-hero-sub: 18px;
@@ -217,15 +317,36 @@
     --logo-card-h: 90px;
   }
 
-  .header__inner {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    padding-top: 8px;
+  .header {
+    height: 60px;
   }
 
-  .header__cta {
-    margin-top: 0;
+  .header__inner {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 60px;
+  }
+
+  .header__logo {
+    width: 100px;
+    height: 78px;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    height: 78px;
+  }
+
+  .hero__photos-grid {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(2, 130px);
+    gap: 10px;
+  }
+
+  .hero__photo-cell {
+    width: 90px;
+    height: 130px;
+    border-radius: 60px;
   }
 
   .hero__event-info {
@@ -239,10 +360,6 @@
     width: 80%;
     height: 1px;
     margin-inline: 0;
-  }
-
-  .stats__item {
-    width: 100%;
   }
 
   .exhibition__nav-btn {
@@ -265,21 +382,62 @@
     --fs-hero-highlight: 24px;
     --fs-schedule-title: 28px;
   }
+
+  .hero__photos-grid {
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(2, 110px);
+    gap: 8px;
+  }
+
+  .hero__photo-cell {
+    width: 75px;
+    height: 110px;
+    border-radius: 50px;
+  }
 }
 
 @media (min-width: 1025px) {
   .choose-school__track {
     justify-content: flex-start;
-    padding-left: 99px;
+    padding-inline: var(--container-padding);
+    padding-block: 12px;
     transform: none !important;
   }
 
   .choose-school__pagination {
     display: none !important;
   }
+
+  .choose-school__card {
+    flex: 1 1 0px;
+    width: auto;
+  }
+}
+
+/* Intermediate responsive overrides for school cards to keep typography readable */
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .choose-school__card-title {
+    font-size: 18px;
+  }
+  .choose-school__card-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .choose-school__card-title {
+    font-size: 16px;
+  }
+  .choose-school__card-desc {
+    font-size: 14px;
+  }
+  .choose-school__card-content {
+    padding: 16px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -289,7 +447,6 @@
     scroll-behavior: auto !important;
   }
 
-  .hero__column-inner,
   .schools-logos__track {
     animation: none !important;
   }

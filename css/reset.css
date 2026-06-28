@@ -146,15 +146,16 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  min-height: 60px;
+  width: 48px;
+  min-height: 48px;
   background: var(--gradient-purple-horizontal-reverse);
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
 }
 
 .btn__icon img,
 .btn__icon svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   filter: brightness(0) invert(1);
 }
 
@@ -162,49 +163,120 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 20px;
-  min-height: 60px;
+  padding: 10px 16px;
+  min-height: 48px;
   font-family: var(--font-body);
-  font-size: var(--fs-btn);
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  border: 2px solid var(--color-dark);
-  border-left: none;
+  letter-spacing: 0.5px;
+  border: none;
   border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
-  color: var(--color-navy);
-  background: transparent;
+  color: var(--color-white);
+  background: var(--color-dark);
 }
 
-.btn--submit .btn__icon--submit {
-  background: var(--color-white);
-  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
-}
-
-.btn--submit .btn__icon--submit img,
-.btn--submit .btn__icon--submit svg {
-  filter: none;
+/* Register Button specific styling */
+.btn--register {
+  border: 2.5px solid #030e3b;
+  border-radius: var(--radius-xs);
+  height: 60px;
+  width: 205px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .btn--register .btn__icon {
-  background: var(--gradient-purple-horizontal-reverse);
+  width: 54px;
+  height: 55px;
+  min-height: auto;
+  background: linear-gradient(270deg, #000e38 0%, #3f186a 100%);
+  border-radius: 0;
+  border-right: 2.5px solid #030e3b;
+}
+
+.btn--register .btn__icon img {
+  filter: brightness(0) invert(1);
 }
 
 .btn--register .btn__text {
-  background: transparent;
-  border-color: var(--color-dark);
-  color: var(--color-navy);
+  flex: 1;
+  height: 55px;
+  min-height: auto;
+  background: #ffffff;
+  color: #030e3b;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Submit Button specific styling */
+.btn--submit {
+  border: 2px solid #ffffff;
+  border-radius: var(--radius-xs);
+  height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.btn--submit .btn__icon--submit {
+  width: 50px;
+  height: 46px;
+  min-height: auto;
+  background: #ffffff;
+  border-radius: 0;
+  border-right: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--submit .btn__icon--submit img {
+  filter: none;
 }
 
 .btn--submit .btn__text {
-  color: var(--color-white);
-  border: 2px solid var(--color-white);
-  border-left: none;
-  background: transparent;
-  min-width: 150px;
+  height: 46px;
+  min-height: auto;
+  background: #3f186a;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-radius: 0;
+  min-width: 100px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Schedule Button specific styling */
+.btn--schedule {
+  border: 2px solid var(--color-navy-border);
+  border-radius: var(--radius-xs);
+  height: 52px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .btn--schedule .btn__icon--schedule {
-  background: var(--gradient-text-purple);
+  width: 50px;
+  height: 48px; /* 52px - 4px border */
+  min-height: auto;
+  background: var(--color-navy-border);
+  border-radius: 0;
+  border-right: 2px solid var(--color-navy-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn--schedule .btn__icon--schedule img,
@@ -213,8 +285,25 @@ textarea {
 }
 
 .btn--schedule .btn__text {
+  height: 48px; /* 52px - 4px border */
+  min-height: auto;
+  background: #ead7ff;
   color: var(--color-navy-border);
-  border: 2px solid var(--color-navy-border);
-  border-left: none;
-  background: transparent;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  border-radius: 0;
+  border: none;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.btn--schedule:hover .btn__text {
+  background: var(--color-navy-border);
+  color: #ead7ff;
 }
