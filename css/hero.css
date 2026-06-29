@@ -275,84 +275,32 @@
 /* ── Photo Grid (Center) ─────────────────────── */
 
 .hero__photos-grid {
-
   display: grid;
-
-  grid-template-columns: repeat(3, 180px);
-
-  grid-template-rows: repeat(2, 280px);
-
-  gap: 16px;
-
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(2, 250px);
+  gap: 30px 16px;
   justify-content: center;
-
   align-self: start;
-
-  padding-top: 60px;
-
+  padding-top: 0;
 }
-
-
 
 .hero__photo-cell {
-
-  width: 180px;
-
-  height: 280px;
-
-  border-radius: 100px;
-
+  width: 160px;
+  height: 250px;
+  border-radius: 80px;
   overflow: hidden;
-
   border: 2px solid rgba(255, 255, 255, 0.5);
-
   background: #d9d9d9;
-
   transition: transform 0.4s ease;
-
 }
-
-
 
 .hero__photo-cell:hover {
-
   transform: scale(1.03);
-
 }
 
 
 
-/* Middle column (2nd) offset up to create staggered effect like Figma */
 
-.hero__photo-cell:nth-child(2) {
-
-  transform: translateY(-30px);
-
-}
-
-
-
-.hero__photo-cell:nth-child(2):hover {
-
-  transform: translateY(-30px) scale(1.03);
-
-}
-
-
-
-.hero__photo-cell:nth-child(5) {
-
-  transform: translateY(-30px);
-
-}
-
-
-
-.hero__photo-cell:nth-child(5):hover {
-
-  transform: translateY(-30px) scale(1.03);
-
-}
 
 
 
@@ -417,11 +365,22 @@
 
 
 .stats__item:first-child,
-
 .stats__item:last-child {
-
   padding: 18px 0;
+}
 
+.stats__wreath {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.stats__laurel {
+  width: 72px;
+  height: 120px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 
@@ -466,29 +425,20 @@
 
 
 .stats__text {
-
   color: #0b2a57;
-
   font-family: "Open Sans", sans-serif;
-
-  font-size: 16px;
-
-  line-height: 1.25;
-
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
   margin: 0;
-
 }
 
-
-
 .stats__text strong {
-
   display: block;
-
-  font-size: 20px;
-
+  font-size: 26px;
+  font-weight: 800;
   color: #0b2a57;
-
+  margin: 2px 0;
 }
 
 

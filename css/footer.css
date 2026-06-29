@@ -4,10 +4,10 @@
 
 .footer__main {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 32px;
   max-width: var(--page-max);
   margin-inline: auto;
   padding: 58px var(--container-padding);
@@ -24,18 +24,22 @@
 .footer__info {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: flex-end;
-  max-width: 1286px;
+  flex-wrap: nowrap;
+  gap: 24px;
+  justify-content: space-between;
 }
 
 .footer__office,
-.footer__contact,
+.footer__contact {
+  position: relative;
+  flex: 1;
+  padding-left: 66px;
+  min-height: 90px;
+}
+
 .footer__social {
   position: relative;
-  max-width: 418px;
-  padding-left: 66px;
+  flex: 1;
   min-height: 90px;
 }
 

@@ -110,6 +110,10 @@
     height: 70px;
   }
 
+  .hero {
+    height: auto;
+  }
+
   .header__logo {
     width: 140px;
     height: 110px;
@@ -227,8 +231,24 @@
     background: linear-gradient(0deg, #ead7ff 0%, rgba(234, 215, 255, 0) 100%);
   }
 
+  .footer__main {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
   .footer__info {
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: flex-start;
+  }
+
+  .footer__office,
+  .footer__contact {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .footer__social {
+    flex: 0 0 calc(50% - 12px);
   }
 }
 
@@ -296,6 +316,40 @@
 
   .exhibition__card {
     flex: 0 0 calc(100% - 32px);
+  }
+
+  .exhibition {
+    padding-bottom: 100px;
+  }
+
+  .exhibition__bg {
+    bottom: 40px;
+    border-radius: 0 0 50% 50% / 0 0 60px 60px;
+  }
+
+  .stats__wreath {
+    gap: 12px;
+  }
+
+  .stats__laurel {
+    width: 50px;
+    height: 90px;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__info {
+    flex-direction: column;
+  }
+
+  .footer__office,
+  .footer__contact,
+  .footer__social {
+    flex: 1 1 auto;
+    width: 100%;
   }
 }
 
@@ -372,6 +426,24 @@
   .footer__social {
     padding-left: 58px;
     max-width: 100%;
+  }
+
+  .exhibition {
+    padding-bottom: 80px;
+  }
+
+  .exhibition__bg {
+    bottom: 30px;
+    border-radius: 0 0 50% 50% / 0 0 40px 40px;
+  }
+
+  .stats__laurel {
+    width: 40px;
+    height: 70px;
+  }
+
+  .stats__text strong {
+    font-size: 20px;
   }
 }
 

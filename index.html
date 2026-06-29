@@ -1,138 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Premier Schools Exhibition – Discover Gurugram's Top 30+ Schools all in one place. 2-3 August 2025 at Apparel House, Sec 44, Gurugram.">
+  <meta name="description"
+    content="Premier Schools Exhibition – Discover Gurugram's Top 30+ Schools all in one place. 2-3 August 2025 at Apparel House, Sec 44, Gurugram.">
   <title>Premier Schools Exhibition | Gurugram 2025</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="header" role="banner">
-  <div class="header__inner container">
-    <a class="header__logo" href="#" aria-label="Premier Schools Exhibition home">
-      <img src="assets/images/logo-6ae87a.png" alt="Premier Schools Exhibition logo" width="201" height="157" class="header__logo-img">
-    </a>
-    <a class="btn btn--register header__cta" href="#enquire-form">
-      <span class="btn__icon" aria-hidden="true">
-        <img src="assets/icons/arrow-diagonal.svg" alt="" width="18" height="18">
-      </span>
-      <span class="btn__text">Register Now</span>
-    </a>
-  </div>
-</header>
+    <div class="header__inner container">
+      <a class="header__logo" href="#" aria-label="Premier Schools Exhibition home">
+        <img src="assets/images/logo-6ae87a.png" alt="Premier Schools Exhibition logo" width="201" height="157"
+          class="header__logo-img">
+      </a>
+      <a class="btn btn--register header__cta" href="#enquire-form">
+        <span class="btn__icon" aria-hidden="true">
+          <img src="assets/icons/arrow-diagonal.svg" alt="" width="18" height="18">
+        </span>
+        <span class="btn__text">Register Now</span>
+      </a>
+    </div>
+  </header>
 
   <main id="main-content">
-<section class="hero" aria-labelledby="hero-heading">
-  <div class="hero__bg" aria-hidden="true"></div>
-  <div class="hero__blur" aria-hidden="true"></div>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__blur" aria-hidden="true"></div>
 
-  <div class="hero__inner">
-    <div class="hero__text">
-      <h1 id="hero-heading" class="hero__title">
-        <span class="hero__title-line">Discover Gurugram's</span>
-        <span class="hero__title-highlight">Top 30+ Schools</span>
-        <span class="hero__title-sub">All In One Place</span>
-      </h1>
-      <div class="hero__event-info">
-        <div class="hero__event-item">
-          <p class="hero__event-primary">Apparel House,</p>
-          <p class="hero__event-secondary">Sec 44, Gurugram</p>
+      <div class="hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-heading" class="hero__title">
+            <span class="hero__title-line">Discover Gurugram's</span>
+            <span class="hero__title-highlight">Top 30+ Schools</span>
+            <span class="hero__title-sub">All In One Place</span>
+          </h1>
+          <div class="hero__event-info">
+            <div class="hero__event-item">
+              <p class="hero__event-primary">Apparel House,</p>
+              <p class="hero__event-secondary">Sec 44, Gurugram</p>
+            </div>
+            <div class="hero__event-divider" aria-hidden="true"></div>
+            <div class="hero__event-item">
+              <p class="hero__event-primary">2-3 August 2025</p>
+              <p class="hero__event-secondary">Sat-Sun | 10AM - 6PM</p>
+            </div>
+          </div>
         </div>
-        <div class="hero__event-divider" aria-hidden="true"></div>
-        <div class="hero__event-item">
-          <p class="hero__event-primary">2-3 August 2025</p>
-          <p class="hero__event-secondary">Sat-Sun | 10AM - 6PM</p>
+
+        <!-- Photo Grid – 2 rows × 3 columns of oval images -->
+        <div class="hero__photos-grid" aria-label="Featured school highlights">
+          <figure class="hero__photo-cell"><img src="assets/images/hero-1.png" alt="Young student with glasses reading"
+              loading="eager"></figure>
+          <figure class="hero__photo-cell"><img src="assets/images/hero-2.png" alt="School children walking together"
+              loading="eager"></figure>
+          <figure class="hero__photo-cell"><img src="assets/images/hero-9.png" alt="Boy playing with football"
+              loading="eager"></figure>
+          <figure class="hero__photo-cell"><img src="assets/images/hero-5.png" alt="Smiling young girl" loading="lazy">
+          </figure>
+          <figure class="hero__photo-cell"><img src="assets/images/hero-7.png" alt="Girl in pink shirt smiling"
+              loading="lazy"></figure>
+          <figure class="hero__photo-cell"><img src="assets/images/hero-11.png" alt="Child playing sports outdoors"
+              loading="lazy"></figure>
         </div>
+
+        <!-- Enquire Now Form -->
+        <aside class="hero__form-panel" id="enquire-form" aria-labelledby="enquire-heading">
+          <h2 id="enquire-heading" class="hero__form-title">Enquire Now</h2>
+          <form class="hero__form" action="#" method="post" novalidate>
+            <div class="hero__form-group">
+              <label class="visually-hidden" for="parent-name">Parent's Name</label>
+              <input type="text" id="parent-name" name="parent-name" class="hero__input" placeholder="Parent's Name"
+                required autocomplete="name">
+            </div>
+            <div class="hero__form-group">
+              <label class="visually-hidden" for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" class="hero__input" placeholder="Phone number" required
+                autocomplete="tel">
+            </div>
+            <div class="hero__form-group">
+              <label class="visually-hidden" for="grade">What grade are you looking for?</label>
+              <input type="text" id="grade" name="grade" class="hero__input"
+                placeholder="What grade are you looking for?">
+            </div>
+            <button type="submit" class="btn btn--submit hero__submit">
+              <span class="btn__icon btn__icon--submit" aria-hidden="true">
+                <img src="assets/icons/arrow-diagonal.svg" alt="" width="18" height="18">
+              </span>
+              <span class="btn__text">Submit</span>
+            </button>
+          </form>
+        </aside>
       </div>
-    </div>
-
-    <!-- Photo Grid – 2 rows × 3 columns of oval images -->
-    <div class="hero__photos-grid" aria-label="Featured school highlights">
-      <figure class="hero__photo-cell"><img src="assets/images/hero-1.png" alt="Young student with glasses reading" loading="eager"></figure>
-      <figure class="hero__photo-cell"><img src="assets/images/hero-2.png" alt="School children walking together" loading="eager"></figure>
-      <figure class="hero__photo-cell"><img src="assets/images/hero-9.png" alt="Boy playing with football" loading="eager"></figure>
-      <figure class="hero__photo-cell"><img src="assets/images/hero-5.png" alt="Smiling young girl" loading="lazy"></figure>
-      <figure class="hero__photo-cell"><img src="assets/images/hero-7.png" alt="Girl in pink shirt smiling" loading="lazy"></figure>
-      <figure class="hero__photo-cell"><img src="assets/images/hero-11.png" alt="Child playing sports outdoors" loading="lazy"></figure>
-    </div>
-
-    <!-- Enquire Now Form -->
-    <aside class="hero__form-panel" id="enquire-form" aria-labelledby="enquire-heading">
-      <h2 id="enquire-heading" class="hero__form-title">Enquire Now</h2>
-      <form class="hero__form" action="#" method="post" novalidate>
-        <div class="hero__form-group">
-          <label class="visually-hidden" for="parent-name">Parent's Name</label>
-          <input type="text" id="parent-name" name="parent-name" class="hero__input" placeholder="Parent's Name" required autocomplete="name">
-        </div>
-        <div class="hero__form-group">
-          <label class="visually-hidden" for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" class="hero__input" placeholder="Phone number" required autocomplete="tel">
-        </div>
-        <div class="hero__form-group">
-          <label class="visually-hidden" for="grade">What grade are you looking for?</label>
-          <input type="text" id="grade" name="grade" class="hero__input" placeholder="What grade are you looking for?">
-        </div>
-        <button type="submit" class="btn btn--submit hero__submit">
-          <span class="btn__icon btn__icon--submit" aria-hidden="true">
-            <img src="assets/icons/arrow-diagonal.svg" alt="" width="18" height="18">
-          </span>
-          <span class="btn__text">Submit</span>
-        </button>
-      </form>
-    </aside>
-  </div>
-</section>
+    </section>
 
     <section class="stats" aria-label="Exhibition statistics">
       <div class="stats__inner">
         <article class="stats__item">
           <div class="stats__wreath">
-            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48"
+              height="86" loading="lazy">
             <p class="stats__text">
               Trusted by<br>
               <strong>1 Million+</strong><br>
               Parents
             </p>
-            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48"
+              height="86" loading="lazy">
           </div>
         </article>
         <article class="stats__item">
           <div class="stats__wreath">
-            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48"
+              height="86" loading="lazy">
             <p class="stats__text">
               <strong>22+</strong><br>
               <strong>Years</strong><br>
               of Legacy
             </p>
-            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48"
+              height="86" loading="lazy">
           </div>
         </article>
         <article class="stats__item">
           <div class="stats__wreath">
-            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48"
+              height="86" loading="lazy">
             <p class="stats__text">
               <strong>500+</strong><br>
               Participating<br>
               Schools
             </p>
-            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48"
+              height="86" loading="lazy">
           </div>
         </article>
         <article class="stats__item">
           <div class="stats__wreath">
-            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--left" src="assets/icons/laurel-left.svg" alt="" width="48"
+              height="86" loading="lazy">
             <p class="stats__text">
               <strong>17 Cities</strong><br>
               Across the<br>
               Globe
             </p>
-            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48" height="86" loading="lazy">
+            <img class="stats__laurel stats__laurel--right" src="assets/icons/laurel-right.svg" alt="" width="48"
+              height="86" loading="lazy">
           </div>
         </article>
       </div>
@@ -142,112 +165,235 @@
       <div class="schools-logos__header">
         <h2 id="schools-logos-heading" class="section-title">Participating Schools</h2>
       </div>
-      <div class="schools-logos__marquee schools-logos__marquee--ltr" tabindex="0" aria-label="Participating school logos scrolling left to right">
+      <div class="schools-logos__marquee schools-logos__marquee--ltr" tabindex="0"
+        aria-label="Participating school logos scrolling left to right">
         <div class="schools-logos__track">
           <ul class="schools-logos__list">
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="Delhi Public School" width="120" height="86"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="TISB Bangalore" width="110" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png" alt="Shrewsbury International" width="201" height="86"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="Heritage Xperiential" width="110" height="110"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="GD Goenka" width="192" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="Scottish High" width="124" height="109"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="Woodstock School" width="112" height="112"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="Pathways World" width="106" height="106"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="Aga Khan Academy" width="92" height="92"></div></li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="Delhi Public School"
+                  width="120" height="86"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="TISB Bangalore" width="110"
+                  height="99"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png"
+                  alt="Shrewsbury International" width="201" height="86"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="Heritage Xperiential"
+                  width="110" height="110"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="GD Goenka" width="192"
+                  height="99"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="Scottish High"
+                  width="124" height="109"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="Woodstock School"
+                  width="112" height="112"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="Pathways World"
+                  width="106" height="106"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="Aga Khan Academy"
+                  width="92" height="92"></div>
+            </li>
           </ul>
           <ul class="schools-logos__list" aria-hidden="true">
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="" width="120" height="86"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="" width="110" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png" alt="" width="201" height="86"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="" width="110" height="110"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="" width="192" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="" width="124" height="109"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="" width="112" height="112"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="" width="106" height="106"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="" width="92" height="92"></div></li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="" width="120" height="86">
+              </div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="" width="110" height="99">
+              </div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png" alt="" width="201"
+                  height="86"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="" width="110"
+                  height="110"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="" width="192"
+                  height="99"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="" width="124"
+                  height="109"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="" width="112"
+                  height="112"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="" width="106"
+                  height="106"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="" width="92" height="92">
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="schools-logos__marquee schools-logos__marquee--rtl" tabindex="0" aria-label="Participating school logos scrolling right to left">
+      <div class="schools-logos__marquee schools-logos__marquee--rtl" tabindex="0"
+        aria-label="Participating school logos scrolling right to left">
         <div class="schools-logos__track">
           <ul class="schools-logos__list">
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="Aga Khan Academy" width="92" height="92"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="Pathways World" width="106" height="106"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="Woodstock School" width="112" height="112"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="Scottish High" width="124" height="109"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="GD Goenka" width="192" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="Heritage Xperiential" width="110" height="110"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png" alt="Shrewsbury International" width="201" height="86"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="TISB Bangalore" width="110" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="Delhi Public School" width="120" height="86"></div></li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="Aga Khan Academy"
+                  width="92" height="92"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="Pathways World"
+                  width="106" height="106"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="Woodstock School"
+                  width="112" height="112"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="Scottish High"
+                  width="124" height="109"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="GD Goenka" width="192"
+                  height="99"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="Heritage Xperiential"
+                  width="110" height="110"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png"
+                  alt="Shrewsbury International" width="201" height="86"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="TISB Bangalore" width="110"
+                  height="99"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="Delhi Public School"
+                  width="120" height="86"></div>
+            </li>
           </ul>
           <ul class="schools-logos__list" aria-hidden="true">
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="" width="92" height="92"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="" width="106" height="106"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="" width="112" height="112"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="" width="124" height="109"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="" width="192" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="" width="110" height="110"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png" alt="" width="201" height="86"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="" width="110" height="99"></div></li>
-            <li class="schools-logos__item"><div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="" width="120" height="86"></div></li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-aga-khan.png" alt="" width="92" height="92">
+              </div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-pathways.png" alt="" width="106"
+                  height="106"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-woodstock.png" alt="" width="112"
+                  height="112"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-scottish.png" alt="" width="124"
+                  height="109"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-gd-goenka.png" alt="" width="192"
+                  height="99"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-heritage.png" alt="" width="110"
+                  height="110"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-shrewsbury.png" alt="" width="201"
+                  height="86"></div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-tisb.png" alt="" width="110" height="99">
+              </div>
+            </li>
+            <li class="schools-logos__item">
+              <div class="schools-logos__card"><img src="assets/images/logo-dps.png" alt="" width="120" height="86">
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="choose-school" aria-labelledby="choose-school-heading">
-      <h2 id="choose-school-heading" class="section-title section-title--large">Choose the School That Fits You Best</h2>
+      <h2 id="choose-school-heading" class="section-title section-title--large">Choose the School That Fits You Best
+      </h2>
       <div class="choose-school__slider" role="region" aria-roledescription="carousel" aria-label="School categories">
         <div class="choose-school__viewport" tabindex="0">
           <div class="choose-school__track">
             <article class="choose-school__card">
               <div class="choose-school__card-image">
-                <img src="assets/images/school-card-1-7bcd50.png" alt="Pre-school children learning" width="420" height="405" loading="lazy">
+                <img src="assets/images/school-card-1-7bcd50.png" alt="Pre-school children learning" width="420"
+                  height="405" loading="lazy">
                 <div class="choose-school__card-overlay" aria-hidden="true"></div>
               </div>
               <div class="choose-school__card-content">
                 <h3 class="choose-school__card-title">Pre-Schools &amp; Early Learning Centres</h3>
-                <p class="choose-school__card-desc">Nurturing foundational skills for toddlers and pre-primary children.</p>
+                <p class="choose-school__card-desc">Nurturing foundational skills for toddlers and pre-primary children.
+                </p>
               </div>
             </article>
             <article class="choose-school__card">
               <div class="choose-school__card-image">
-                <img src="assets/images/school-card-2-39a7d1.png" alt="K-12 CBSE day school students" width="420" height="405" loading="lazy">
+                <img src="assets/images/school-card-2-39a7d1.png" alt="K-12 CBSE day school students" width="420"
+                  height="405" loading="lazy">
                 <div class="choose-school__card-overlay" aria-hidden="true"></div>
               </div>
               <div class="choose-school__card-content">
                 <h3 class="choose-school__card-title">K–12 CBSE Day Schools</h3>
-                <p class="choose-school__card-desc">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+                <p class="choose-school__card-desc">Reputed schools offering complete schooling from Kindergarten to
+                  Grade 12.</p>
               </div>
             </article>
             <article class="choose-school__card">
               <div class="choose-school__card-image">
-                <img src="assets/images/school-card-4-57d4fa.png" alt="Modern heritage school campus" width="420" height="405" loading="lazy">
+                <img src="assets/images/school-card-4-57d4fa.png" alt="Modern heritage school campus" width="420"
+                  height="405" loading="lazy">
                 <div class="choose-school__card-overlay" aria-hidden="true"></div>
               </div>
               <div class="choose-school__card-content">
                 <h3 class="choose-school__card-title">Heritage to New-Age Schools</h3>
-                <p class="choose-school__card-desc">Time-tested schools to innovative pedagogy, tech enabled, future-ready schools</p>
+                <p class="choose-school__card-desc">Time-tested schools to innovative pedagogy, tech enabled,
+                  future-ready schools</p>
               </div>
             </article>
             <article class="choose-school__card">
               <div class="choose-school__card-image">
-                <img src="assets/images/school-card-3-1eaa91.png" alt="International curriculum classroom" width="420" height="405" loading="lazy">
+                <img src="assets/images/school-card-3-1eaa91.png" alt="International curriculum classroom" width="420"
+                  height="405" loading="lazy">
                 <div class="choose-school__card-overlay" aria-hidden="true"></div>
               </div>
               <div class="choose-school__card-content">
                 <h3 class="choose-school__card-title">International Curriculum Schools</h3>
-                <p class="choose-school__card-desc">Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
+                <p class="choose-school__card-desc">Offering IB, Cambridge, Finnish and other global curricula with a
+                  global learning environment.</p>
               </div>
             </article>
           </div>
         </div>
         <div class="choose-school__pagination" role="tablist" aria-label="School category navigation">
-          <button type="button" class="choose-school__dot choose-school__dot--active" role="tab" aria-selected="true" aria-label="Category 1"></button>
-          <button type="button" class="choose-school__dot" role="tab" aria-selected="false" aria-label="Category 2"></button>
-          <button type="button" class="choose-school__dot" role="tab" aria-selected="false" aria-label="Category 3"></button>
-          <button type="button" class="choose-school__dot" role="tab" aria-selected="false" aria-label="Category 4"></button>
+          <button type="button" class="choose-school__dot choose-school__dot--active" role="tab" aria-selected="true"
+            aria-label="Category 1"></button>
+          <button type="button" class="choose-school__dot" role="tab" aria-selected="false"
+            aria-label="Category 2"></button>
+          <button type="button" class="choose-school__dot" role="tab" aria-selected="false"
+            aria-label="Category 3"></button>
+          <button type="button" class="choose-school__dot" role="tab" aria-selected="false"
+            aria-label="Category 4"></button>
         </div>
       </div>
     </section>
@@ -267,7 +413,8 @@
           </a>
         </div>
         <div class="schedule__image">
-          <img src="assets/images/schedule-hero-504555.png" alt="Parents consulting with school representatives at exhibition" width="1174" height="725" loading="lazy">
+          <img src="assets/images/schedule-hero-504555.png"
+            alt="Parents consulting with school representatives at exhibition" width="1174" height="725" loading="lazy">
           <div class="schedule__image-fade" aria-hidden="true"></div>
         </div>
       </div>
@@ -275,43 +422,45 @@
 
     <section class="exhibition" aria-labelledby="exhibition-heading">
       <div class="exhibition__bg" aria-hidden="true"></div>
-      <div class="exhibition__curve" aria-hidden="true"></div>
       <div class="exhibition__header">
-        <h2 id="exhibition-heading" class="section-title section-title--white section-title--large">What Makes This Exhibition a Must-Visit</h2>
+        <h2 id="exhibition-heading" class="section-title section-title--white section-title--large">What Makes This
+          Exhibition a Must-Visit</h2>
       </div>
       <div class="exhibition__slider" role="region" aria-roledescription="carousel" aria-label="Exhibition highlights">
         <div class="exhibition__viewport" tabindex="0">
           <div class="exhibition__track">
             <article class="exhibition__card">
-              <img class="exhibition__icon" src="assets/icons/exhibition-interact.svg" alt="" width="80" height="80">
+              <img class="exhibition__icon" src="assets/icons/icon-1.png" alt="" width="48" height="48">
               <div class="exhibition__card-body">
                 <h3 class="exhibition__card-title">Interact Directly with School Heads</h3>
                 <p class="exhibition__card-desc">Get answers straight from the experts</p>
               </div>
             </article>
             <article class="exhibition__card">
-              <img class="exhibition__icon" src="assets/icons/exhibition-compare.svg" alt="" width="80" height="80">
+              <img class="exhibition__icon" src="assets/icons/icon-2.png" alt="" width="48" height="48">
               <div class="exhibition__card-body">
                 <h3 class="exhibition__card-title">Compare Curriculum &amp; Pedagogy</h3>
-                <p class="exhibition__card-desc">Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish &amp; more</p>
+                <p class="exhibition__card-desc">Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish
+                  &amp; more</p>
               </div>
             </article>
             <article class="exhibition__card">
-              <img class="exhibition__icon" src="assets/icons/exhibition-fees.svg" alt="" width="80" height="80">
+              <img class="exhibition__icon" src="assets/icons/icon-3.png" alt="" width="48" height="48">
               <div class="exhibition__card-body">
                 <h3 class="exhibition__card-title">Get Exclusive Fee Structures &amp; Offers</h3>
                 <p class="exhibition__card-desc">Access transparent information and avail offers</p>
               </div>
             </article>
             <article class="exhibition__card">
-              <img class="exhibition__icon" src="assets/icons/exhibition-explore.svg" alt="" width="80" height="80">
+              <img class="exhibition__icon" src="assets/icons/icon-4.png" alt="" width="48" height="48">
               <div class="exhibition__card-body">
                 <h3 class="exhibition__card-title">Explore Schools Offerings</h3>
-                <p class="exhibition__card-desc">Preview infrastructure, co-curricular, teaching methodology and culture</p>
+                <p class="exhibition__card-desc">Preview infrastructure, co-curricular, teaching methodology and culture
+                </p>
               </div>
             </article>
             <article class="exhibition__card">
-              <img class="exhibition__icon" src="assets/icons/exhibition-admission.svg" alt="" width="80" height="80">
+              <img class="exhibition__icon" src="assets/icons/icon-5.png" alt="" width="48" height="48">
               <div class="exhibition__card-body">
                 <h3 class="exhibition__card-title">On-the-Spot Admissions &amp; Counselling</h3>
                 <p class="exhibition__card-desc">Save time with instant applications and expert guidance</p>
@@ -320,19 +469,28 @@
           </div>
         </div>
         <div class="exhibition__nav">
-          <button type="button" class="exhibition__nav-btn exhibition__nav-btn--prev exhibition__arrow exhibition__arrow--prev" aria-label="Previous highlight">
-            <span aria-hidden="true">&#8249;</span>
+          <button type="button"
+            class="exhibition__nav-btn exhibition__nav-btn--prev exhibition__arrow exhibition__arrow--prev"
+            aria-label="Previous highlight">
+            <span aria-hidden="true">&larr;</span>
           </button>
-          <button type="button" class="exhibition__nav-btn exhibition__nav-btn--next exhibition__arrow exhibition__arrow--next" aria-label="Next highlight">
-            <span aria-hidden="true">&#8250;</span>
+          <button type="button"
+            class="exhibition__nav-btn exhibition__nav-btn--next exhibition__arrow exhibition__arrow--next"
+            aria-label="Next highlight">
+            <span aria-hidden="true">&rarr;</span>
           </button>
         </div>
         <div class="exhibition__pagination" role="tablist" aria-label="Exhibition highlight navigation" hidden>
-          <button type="button" class="exhibition__dot exhibition__dot--active" role="tab" aria-selected="true" aria-label="Highlight 1"></button>
-          <button type="button" class="exhibition__dot" role="tab" aria-selected="false" aria-label="Highlight 2"></button>
-          <button type="button" class="exhibition__dot" role="tab" aria-selected="false" aria-label="Highlight 3"></button>
-          <button type="button" class="exhibition__dot" role="tab" aria-selected="false" aria-label="Highlight 4"></button>
-          <button type="button" class="exhibition__dot" role="tab" aria-selected="false" aria-label="Highlight 5"></button>
+          <button type="button" class="exhibition__dot exhibition__dot--active" role="tab" aria-selected="true"
+            aria-label="Highlight 1"></button>
+          <button type="button" class="exhibition__dot" role="tab" aria-selected="false"
+            aria-label="Highlight 2"></button>
+          <button type="button" class="exhibition__dot" role="tab" aria-selected="false"
+            aria-label="Highlight 3"></button>
+          <button type="button" class="exhibition__dot" role="tab" aria-selected="false"
+            aria-label="Highlight 4"></button>
+          <button type="button" class="exhibition__dot" role="tab" aria-selected="false"
+            aria-label="Highlight 5"></button>
         </div>
       </div>
     </section>
@@ -340,18 +498,21 @@
 
   <footer class="footer" role="contentinfo">
     <div class="footer__main">
-      <img class="footer__logo" src="assets/images/logo-6ae87a.png" alt="Premier Schools Exhibition" width="142" height="124">
+      <img class="footer__logo" src="assets/images/logo-6ae87a.png" alt="Premier Schools Exhibition" width="142"
+        height="124">
       <div class="footer__info">
         <div class="footer__office">
           <h3 class="footer__office-title">Corporate Office:</h3>
-          <p class="footer__office-text">Suite B-5, Ballygunge Park Tower,<br>67B Ballygunge Circular Road, Kolkata - 700019</p>
+          <p class="footer__office-text">Suite B-5, Ballygunge Park Tower,<br>67B Ballygunge Circular Road, Kolkata -
+            700019</p>
           <span class="footer__icon-box" aria-hidden="true">
             <img src="assets/icons/location.svg" alt="" width="30" height="30">
           </span>
         </div>
         <div class="footer__office">
           <h3 class="footer__office-title">Ahmedabad Office:</h3>
-          <p class="footer__office-text">12/AA, Swastik Chambers, Near CU Shah College, Ashram Road, Ahmedabad - 380009</p>
+          <p class="footer__office-text">12/AA, Swastik Chambers, Near CU Shah College, Ashram Road, Ahmedabad - 380009
+          </p>
           <span class="footer__icon-box" aria-hidden="true">
             <img src="assets/icons/location.svg" alt="" width="30" height="30">
           </span>
@@ -396,4 +557,5 @@
   <script src="js/navbar.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
+
 </html>
